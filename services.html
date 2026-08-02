@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Osher Wealth Managers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Osher Wealth Managers home">
+      <img src="assets/logo.png" alt="Osher Wealth Managers logo" class="brand-logo">
+      <span>
+        <strong>Osher Wealth Managers</strong>
+        <small>Architects of Wealth</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#about">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="low-risk.html">Low Risk</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Advisory Suite</p>
+      <h1>Planning modules for personal wealth decisions.</h1>
+      <p class="hero-text">Choose any advisory module to begin the suitability questionnaire. The recommendation opens on a dedicated page after classification.</p>
+      <button class="btn primary open-profile" type="button">Begin Questionnaire</button>
+    </section>
+    <section class="section">
+      <div class="carousel-shell">
+                  <div class="carousel-actions">
+            <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous service">‹</button>
+            <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next service">›</button>
+        </div>
+        <div class="service-carousel" data-carousel>
+        <button class="service-card open-profile" type="button"><span>01</span><h3>Investment Planning</h3><p>Portfolio construction, SIP/STP design, review cadence and allocation guardrails.</p></button>
+        <button class="service-card open-profile" type="button"><span>02</span><h3>Cash Flow Planning</h3><p>Professional-income buffers, quarterly tax reserves and annual liquidity design.</p></button>
+        <button class="service-card open-profile" type="button"><span>03</span><h3>Insurance Audit</h3><p>Term, health, key-person and liability coverage mapped to family obligations.</p></button>
+        <button class="service-card open-profile" type="button"><span>04</span><h3>Goal Architecture</h3><p>Education, home, practice expansion and legacy goals sequenced by time horizon.</p></button>
+        <button class="service-card open-profile" type="button"><span>05</span><h3>Debt Strategy</h3><p>Loan prioritisation, refinancing review and prepayment decisions without liquidity stress.</p></button>
+        <button class="service-card open-profile" type="button"><span>06</span><h3>Retirement Planning</h3><p>Corpus path, withdrawal buckets and inflation-aware independence planning.</p></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="profileModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <button id="modalClose" class="modal-close" type="button" aria-label="Close questionnaire">x</button>
+      <p class="eyebrow">5 Question Profile</p>
+      <h2 id="profileTitle">Find the suitable advisory class.</h2>
+      <form id="profileForm" class="profile-form">
+        <label>Age<select id="age"><option value="30">Under 30</option><option value="38" selected>30 - 40</option><option value="48">41 - 50</option><option value="58">51 - 60</option><option value="65">Above 60</option></select></label>
+        <label>Profession<select id="profession"><option value="doctor">Doctor</option><option value="lawyer">Lawyer</option><option value="ca">CA</option><option value="architect">Architect</option><option value="consultant">Consultant</option><option value="freelancer">Freelancer / Creator</option><option value="engineer">Engineer</option><option value="army">Army / Defence</option><option value="other">Other</option></select></label>
+        <label>Annual Income<select id="income"><option value="2500000">Below Rs. 25L</option><option value="5000000">Rs. 25L - Rs. 50L</option><option value="10000000">Rs. 50L - Rs. 1Cr</option><option value="25000000">Rs. 1Cr - Rs. 2.5Cr</option><option value="50000000">Above Rs. 2.5Cr</option></select></label>
+        <label>Investible Assets<select id="assets"><option value="2500000">Below Rs. 25L</option><option value="7500000">Rs. 25L - Rs. 1Cr</option><option value="25000000">Rs. 1Cr - Rs. 5Cr</option><option value="100000000">Rs. 5Cr - Rs. 20Cr</option><option value="250000000">Above Rs. 20Cr</option></select></label>
+        <label>Retirement Age<select id="retirement"><option value="50">Before 50</option><option value="55">50 - 55</option><option value="60" selected>56 - 60</option><option value="65">61 - 65</option><option value="70">After 65</option></select></label>
+        <button class="btn primary" type="submit">Continue to Advisory</button>
+      </form>
+      <div id="profileResult" class="profile-result">Your advisory class and fee will appear here.</div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Osher Wealth Managers</span>
+    <small>Demo prototype. Consult a qualified advisor before making investment decisions.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

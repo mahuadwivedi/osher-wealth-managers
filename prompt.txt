@@ -1,0 +1,22 @@
+Osher Wealth Managers static website prompt
+
+Build and maintain a premium responsive front-end prototype for Osher Wealth Managers using mostly HTML and CSS. Use JavaScript only for simple rule-based interactions such as the chatbot and demo profile classification. Preserve the Indian wealth-management context, matte black / charcoal grey / metallic silver brand direction, and demo disclaimers.
+
+Required sections:
+- Home
+- About
+- Services
+- Pricing
+- Market Insights
+- Risk Questionnaire
+- Testimonials
+- Partners
+- Contact
+- Brochure download
+- Floating rule-based chatbot
+
+Target users:
+Lawyers, doctors, CAs, architects, consultants, freelancers and creators aged 30-50 with non-fixed income.
+
+Business focus:
+Goal-based planning, retirement planning, cash-flow management, insurance, debt management and risk-based wealth planning.
