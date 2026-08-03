@@ -16,6 +16,23 @@ const advisorySummary = document.getElementById("advisorySummary");
 const advisoryFee = document.getElementById("advisoryFee");
 const advisoryNote = document.getElementById("advisoryNote");
 const carouselShells = document.querySelectorAll(".carousel-shell");
+const pricingCards = document.querySelectorAll(".pricing-card");
+
+const tierSlugs = {
+  "Upper Mass Affluent": "upper-mass-affluent",
+  "Affluent": "affluent",
+  "HNI": "hni",
+  "UHNI": "uhni",
+  "VHNI": "vhni"
+};
+
+function highlightPricingCard(label) {
+  pricingCards.forEach((card) => card.classList.remove("is-active"));
+  const slug = tierSlugs[label];
+  if (!slug) return;
+  const match = document.querySelector(`.pricing-card[data-tier="${slug}"]`);
+  if (match) match.classList.add("is-active");
+}
 
 const promptQuestions = [
   "Which services do you offer?",
@@ -152,6 +169,7 @@ function updatePricing(profile) {
   pricingClass.textContent = `${profile.client.label} advisory profile`;
   pricingFee.textContent = profile.client.fee;
   pricingNote.textContent = `${profile.summary} Low-risk mandate, if selected, is charged separately at Rs. 18,000 plus 0.35% of the investment made.`;
+  highlightPricingCard(profile.client.label);   
 }
 
 function loadAdvisoryPage() {
