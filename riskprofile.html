@@ -282,9 +282,9 @@
     function showResult(withEmail) {
       riskResult.hidden = false;
       if (withEmail) {
-        riskResult.textContent = `Demo mode: your risk profile has been recorded. Results would be sent to ${emailInput.value.trim()} in a live version of this site.`;
+        riskResult.textContent = `Your risk profile has been recorded. Results would be sent to ${emailInput.value.trim()}`;
       } else {
-        riskResult.textContent = "Demo mode: your risk profile has been recorded. No email was provided, so no results were sent.";
+        riskResult.textContent = "Your risk profile has been recorded. No email was provided. Enter your email to get results.";
       }
       riskResult.scrollIntoView({ behavior: "smooth", block: "center" });
     }
