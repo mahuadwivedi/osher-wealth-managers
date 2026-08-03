@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Profiling | Osher Wealth Managers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Osher Wealth Managers home">
+      <img src="logo.png" alt="Osher Wealth Managers logo" class="brand-logo">
+      <span>
+        <strong>Osher Wealth Managers</strong>
+        <small>Architects of Wealth</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#about">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#insights">Insights</a>
+      <a class="risk-link" href="low-risk.html">Low Risk</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="riskprofile.html">Risk Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Risk Profiling</p>
+      <h1>A short questionnaire on capacity, tolerance and goals.</h1>
+      <p class="hero-text">This demo profile helps map how much risk you can afford to take, how much risk you are comfortable taking, what you are planning for, and how prepared you are for the unexpected. Every question is optional &mdash; answer only what you are comfortable sharing.</p>
+    </section>
+
+    <section class="section">
+      <form id="riskForm">
+
+        <div class="card" style="margin-bottom: 22px;">
+          <p class="eyebrow">Section 1</p>
+          <h3>Risk Capacity</h3>
+          <p style="color: var(--muted); font-size: 14px; margin-bottom: 18px;">How much risk your financial situation can absorb.</p>
+          <div class="profile-form">
+            <label>Age Group
+              <select name="rc_age">
+                <option value="" selected>Prefer not to say</option>
+                <option value="under30">Under 30</option>
+                <option value="30-40">30 &ndash; 40</option>
+                <option value="41-50">41 &ndash; 50</option>
+                <option value="51-60">51 &ndash; 60</option>
+                <option value="above60">Above 60</option>
+              </select>
+            </label>
+            <label>Annual Income
+              <select name="rc_income">
+                <option value="" selected>Prefer not to say</option>
+                <option value="below25l">Below Rs. 25L</option>
+                <option value="25-50l">Rs. 25L &ndash; Rs. 50L</option>
+                <option value="50l-1cr">Rs. 50L &ndash; Rs. 1Cr</option>
+                <option value="1-2.5cr">Rs. 1Cr &ndash; Rs. 2.5Cr</option>
+                <option value="above2.5cr">Above Rs. 2.5Cr</option>
+              </select>
+            </label>
+            <label>Dependents
+              <select name="rc_dependents">
+                <option value="" selected>Prefer not to say</option>
+                <option value="0">None</option>
+                <option value="1-2">1 &ndash; 2</option>
+                <option value="3-4">3 &ndash; 4</option>
+                <option value="5+">5 or more</option>
+              </select>
+            </label>
+            <label>Investment Horizon
+              <select name="rc_horizon">
+                <option value="" selected>Prefer not to say</option>
+                <option value="short">Under 3 years</option>
+                <option value="medium">3 &ndash; 7 years</option>
+                <option value="long">7 &ndash; 15 years</option>
+                <option value="verylong">15+ years</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 22px;">
+          <p class="eyebrow">Section 2</p>
+          <h3>Risk Tolerance</h3>
+          <p style="color: var(--muted); font-size: 14px; margin-bottom: 18px;">How comfortable you are with market ups and downs.</p>
+          <div class="profile-form">
+            <label>If your portfolio fell 20% in a month, you would
+              <select name="rt_reaction">
+                <option value="" selected>Prefer not to say</option>
+                <option value="sell">Sell and move to safety</option>
+                <option value="wait">Wait and watch</option>
+                <option value="hold">Hold and stay invested</option>
+                <option value="buy">Invest more at lower prices</option>
+              </select>
+            </label>
+            <label>Comfort with Volatility
+              <select name="rt_volatility">
+                <option value="" selected>Prefer not to say</option>
+                <option value="low">Low &mdash; I prefer stability</option>
+                <option value="moderate">Moderate &mdash; some swings are fine</option>
+                <option value="high">High &mdash; I can ride out swings</option>
+              </select>
+            </label>
+            <label>Prior Investment Experience
+              <select name="rt_experience">
+                <option value="" selected>Prefer not to say</option>
+                <option value="none">None</option>
+                <option value="basic">Basic &mdash; FDs, PPF, insurance</option>
+                <option value="moderate">Moderate &mdash; mutual funds, SIPs</option>
+                <option value="advanced">Advanced &mdash; equities, derivatives</option>
+              </select>
+            </label>
+            <label>Preferred Investment Style
+              <select name="rt_style">
+                <option value="" selected>Prefer not to say</option>
+                <option value="conservative">Conservative</option>
+                <option value="balanced">Balanced</option>
+                <option value="growth">Growth-oriented</option>
+                <option value="aggressive">Aggressive</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 22px;">
+          <p class="eyebrow">Section 3</p>
+          <h3>Financial Goals</h3>
+          <p style="color: var(--muted); font-size: 14px; margin-bottom: 18px;">What you are planning for, and by when.</p>
+          <div class="profile-form">
+            <label>Primary Goal
+              <select name="fg_goal">
+                <option value="" selected>Prefer not to say</option>
+                <option value="retirement">Retirement</option>
+                <option value="home">Home Purchase</option>
+                <option value="education">Child Education</option>
+                <option value="wealth">Long-term Wealth Creation</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>Goal Timeline
+              <select name="fg_timeline">
+                <option value="" selected>Prefer not to say</option>
+                <option value="0-3">0 &ndash; 3 years</option>
+                <option value="3-7">3 &ndash; 7 years</option>
+                <option value="7-15">7 &ndash; 15 years</option>
+                <option value="15+">15+ years</option>
+              </select>
+            </label>
+            <label>Target Amount
+              <select name="fg_amount">
+                <option value="" selected>Prefer not to say</option>
+                <option value="below25l">Below Rs. 25L</option>
+                <option value="25l-1cr">Rs. 25L &ndash; Rs. 1Cr</option>
+                <option value="1-5cr">Rs. 1Cr &ndash; Rs. 5Cr</option>
+                <option value="above5cr">Above Rs. 5Cr</option>
+              </select>
+            </label>
+            <label>Priority Level
+              <select name="fg_priority">
+                <option value="" selected>Prefer not to say</option>
+                <option value="essential">Essential</option>
+                <option value="important">Important</option>
+                <option value="flexible">Flexible / Nice to have</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 22px;">
+          <p class="eyebrow">Section 4</p>
+          <h3>Emergency Funds</h3>
+          <p style="color: var(--muted); font-size: 14px; margin-bottom: 18px;">How prepared you are for unplanned expenses.</p>
+          <div class="profile-form">
+            <label>Do you have an emergency fund?
+              <select name="ef_has">
+                <option value="" selected>Prefer not to say</option>
+                <option value="yes">Yes</option>
+                <option value="partial">Partially</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+            <label>Months of Expenses Covered
+              <select name="ef_months">
+                <option value="" selected>Prefer not to say</option>
+                <option value="none">None</option>
+                <option value="1-3">1 &ndash; 3 months</option>
+                <option value="3-6">3 &ndash; 6 months</option>
+                <option value="6+">6+ months</option>
+              </select>
+            </label>
+            <label>Where is it held?
+              <select name="ef_type">
+                <option value="" selected>Prefer not to say</option>
+                <option value="savings">Savings Account</option>
+                <option value="liquid">Liquid Fund</option>
+                <option value="fd">Fixed Deposit</option>
+                <option value="none">Not applicable</option>
+              </select>
+            </label>
+            <label>Monthly Essential Expenses
+              <select name="ef_expenses">
+                <option value="" selected>Prefer not to say</option>
+                <option value="below50k">Below Rs. 50,000</option>
+                <option value="50k-1.5l">Rs. 50,000 &ndash; Rs. 1.5L</option>
+                <option value="1.5-3l">Rs. 1.5L &ndash; Rs. 3L</option>
+                <option value="above3l">Above Rs. 3L</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn primary" type="submit">Submit Risk Profile</button>
+          <small style="align-self: center; color: var(--muted);">This is a demo &mdash; no data is processed or stored.</small>
+        </div>
+      </form>
+
+      <div id="riskResult" class="profile-result" hidden></div>
+    </section>
+  </main>
+
+  <div id="emailModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle" style="max-width: 460px;">
+      <button id="emailModalClose" class="modal-close" type="button" aria-label="Close">x</button>
+      <p class="eyebrow">Optional</p>
+      <h2 id="emailModalTitle" style="font-size: 24px;">Get your results by email</h2>
+      <p style="color: var(--muted); font-size: 14px; margin-bottom: 18px;">We will send a copy of your risk profile results to your email. Leave this blank if you would rather not share it &mdash; it will not affect your demo results.</p>
+      <label style="display: block; color: var(--muted); font-size: 13px;">
+        Email Address
+        <input type="email" id="emailInput" placeholder="you@example.com">
+      </label>
+      <div class="hero-actions" style="margin-top: 20px;">
+        <button id="emailSend" class="btn primary" type="button">Send Results</button>
+        <button id="emailSkip" class="btn secondary" type="button">Skip</button>
+      </div>
+    </div>
+  </div>
+
+  <footer style="padding:20px 40px; border-top:1px solid rgba(255,255,255,0.1); display:block;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <span style="font-size:20px; font-weight:600;">
+            Osher Wealth Managers
+        </span>
+
+        <small style="font-size:14px; color:#b8b8b8;">
+            You can consult a qualified financial advisor before making investment decisions.
+        </small>
+    </div>
+    <br>
+    <div style="margin-top:16px; text-align:center; width:100%;">
+        <small style="display:block; width:100%; font-style:italic; letter-spacing:1.2px; color:#8f8f8f; font-size:13px;">
+            © 2026 Mahua Dwivedi. Website design, interface & source code. All Rights Reserved.
+        </small>
+    </div>
+  </footer>
+
+  <script>
+    const riskForm = document.getElementById("riskForm");
+    const emailModal = document.getElementById("emailModal");
+    const emailModalClose = document.getElementById("emailModalClose");
+    const emailSend = document.getElementById("emailSend");
+    const emailSkip = document.getElementById("emailSkip");
+    const emailInput = document.getElementById("emailInput");
+    const riskResult = document.getElementById("riskResult");
+
+    function openEmailModal() {
+      emailModal.classList.add("open");
+      emailModal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeEmailModal() {
+      emailModal.classList.remove("open");
+      emailModal.setAttribute("aria-hidden", "true");
+    }
+
+    function showResult(withEmail) {
+      riskResult.hidden = false;
+      if (withEmail) {
+        riskResult.textContent = `Demo mode: your risk profile has been recorded. Results would be sent to ${emailInput.value.trim()} in a live version of this site.`;
+      } else {
+        riskResult.textContent = "Demo mode: your risk profile has been recorded. No email was provided, so no results were sent.";
+      }
+      riskResult.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    if (riskForm) {
+      riskForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        openEmailModal();
+      });
+    }
+
+    if (emailModalClose) emailModalClose.addEventListener("click", closeEmailModal);
+    if (emailModal) {
+      emailModal.addEventListener("click", (event) => {
+        if (event.target === emailModal) closeEmailModal();
+      });
+    }
+
+    if (emailSkip) {
+      emailSkip.addEventListener("click", () => {
+        closeEmailModal();
+        showResult(false);
+      });
+    }
+
+    if (emailSend) {
+      emailSend.addEventListener("click", () => {
+        closeEmailModal();
+        showResult(Boolean(emailInput.value.trim()));
+      });
+    }
+  </script>
+</body>
+</html>
