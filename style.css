@@ -479,6 +479,51 @@ h3 {
   margin-bottom: 0;
 }
 
+.pricing-classes {
+  margin-top: 26px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.pricing-card-fee {
+  display: block;
+  margin: 4px 0 6px;
+  font-family: var(--font-display);
+  font-size: 22px;
+}
+
+.pricing-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pricing-card.is-active {
+  border-color: var(--gold);
+  background: linear-gradient(180deg, #1a1b1f, #121316);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22), 0 10px 30px rgba(191, 163, 109, 0.18);
+}
+
+.pricing-card.is-active::before {
+  content: "Your Category";
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: var(--gold);
+  color: var(--black);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
 #pricingClass {
   margin: 0;
   max-width: 560px;
