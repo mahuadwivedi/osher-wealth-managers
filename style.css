@@ -490,6 +490,15 @@ h3 {
   transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
 }
 
+.pricing-card-slab {
+  display: block;
+  margin-top: 6px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .pricing-card-fee {
   display: block;
   margin: 4px 0 6px;
